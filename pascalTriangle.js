@@ -11,9 +11,10 @@ function printPascalTriangle(rows){
     for( n=0; n<rows; n++ ){        
         // Declare string to store triangle row values
         var pascalRow = "";
-        //Initialize pascalRow with whitespaces for triangle display
-        for(w=1; w<= rows-(n+1); w++)
-            pascalRow += ' ';
+        //Initialize pascalRow with whitespaces for triangle display - Uncomment for triangular display(works better with <6 rows)
+        /*for(w=1; w<= rows-(n+1); w++) 
+            pascalRow += ' ';*/
+
         //Loop for columns - k
         for( k=0; k<=n; k++ ){
             //Implement nCk formula - n!/(k!*(n-k)!)
